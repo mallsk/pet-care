@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="stylesheet" href="sign_up.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Pet Health Care </h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="form">
+                <h2>Create Account</h2>
+                <form action="register_user.jsp" method="post">
+                    <div class="error">Error</div>
+                    <div class="grid-details">
+                        <div class="input">
+                            <label>First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="fname" name="fname" placeholder="First Name" required
+                                pattern="[a-zA-Z'-'\s]*">
+                        </div>
+                        <div class="input">
+                            <label>Last Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" required
+                                pattern="[a-zA-Z'-'\s]*">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input">
+                        <label>Phone Number:</label>&nbsp;
+                        <input type="phone" id="phone" name="phone" placeholder="Phone Number" required
+                            pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Enter 10 digit number')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="grid-details">
+                        <div class="input">
+                            <label>Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" id="pass" name="pass" placeholder="Password" required>
+                        </div>
+                        <div class="input">
+                            <label>Re-Enter:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" id="cpass" name="cpass" placeholder="Re-Type Password" required>
+                        </div>
+
+                        <button class="btnn">Sign Up</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

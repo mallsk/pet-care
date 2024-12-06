@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="valid.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Pet Health & Care </h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.jsp">HOME</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <form action="login.jsp" method="post">
+                    <h2>User Login</h2>
+                    <input type="email" name="email" id="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="pass" id="pass" placeholder="Enter Password Here" required>
+                    <input type="checkbox" class="checkbox" placeholder="View Password" onclick="myfunction()">
+                    <button class="btnn" onclick="validate()">Login</button>
+
+                    <p class="link">Don't have an account<br>
+                        <a href="sign_up.html">Sign up </a> here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="length"></p>
+    </div>
+</body>
+
+</html>

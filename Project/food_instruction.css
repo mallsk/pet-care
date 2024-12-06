@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image:linear-gradient(to top, rgba(0,0,0,0.8)5%,rgba(0,0,0,0.8)5%),url(dog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .main{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .navbar{
+    height: 95px;
+    width: auto;
+    
+    background:linear-gradient(to top, rgba(0,0,0,0.8)10%,rgba(0,0,0,0.8)10%);
+  }
+  
+  .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  
+  .logo{
+    color: #f4f2f0;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+  }
+  
+  .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+    
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 30px;
+    font-size: 16px;
+    display: inline;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  ul li a:hover{
+    color: orange;
+  }
+  .points {
+    margin-top: 20px;
+    margin-left: 20px;
+    top:40px;
+    left:100px;
+    color:white;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+}
+.points li:hover{
+    font-size: 22px;
+    color:orange;
+    transform: translateY(-5px);
+}

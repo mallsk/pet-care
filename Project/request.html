@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+</head>
+<body>
+    
+<%
+    String doctor = request.getParameter("doctor");
+    String petname = request.getParameter("petname");
+    String petDetails = request.getParameter("petDetails");
+
+    // Perform any necessary operations to send the appointment request to the selected doctor
+
+    // Return a success response to the AJAX request
+    response.setContentType("text/plain");
+    response.getWriter().write("success");
+%>
+
+</body>
+</html>
